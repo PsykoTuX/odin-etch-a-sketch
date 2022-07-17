@@ -1,0 +1,10 @@
+#container {
+    display: grid;
+    border: 1px solid black;
+    grid-template: repeat(16, 3rem) / repeat(16, 3rem);
+    justify-content: center;
+}
+
+.cell {
+    border: 1px solid rgb(82, 82, 212);
+}
