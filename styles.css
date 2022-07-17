@@ -1,15 +1,15 @@
 #container {
     display: grid;
-    border: 1px solid black;
-    grid-template: repeat(16, 3rem) / repeat(16, 3rem);
+    grid-template: repeat(16, 3.5rem) / repeat(16, 3.5rem);
     justify-content: center;
+    margin: 3rem;
 }
 
 .cell {
-    border: 1px solid rgb(82, 82, 212);
+    border: 1px solid rgb(160, 160, 211);
 }
 
 .toggled {
-background-color: black;
+background-color: rgb(78, 78, 78);
 
 }

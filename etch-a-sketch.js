@@ -4,6 +4,7 @@ let div = document.createElement('div');
 div.classList = 'cell';
 
 
+
 for (let i=0; i<(16*16); i++) {
     container.appendChild(div.cloneNode());
 }
@@ -19,3 +20,16 @@ div.classList.add('toggled')
 
 });
 
+
+function reset () {
+    divs.forEach((div) => {
+    div.classList.remove('toggled')
+        })
+    };
+
+let clear = document.getElementById('clear');
+
+
+clear.addEventListener('click', () => {
+reset ()
+})
