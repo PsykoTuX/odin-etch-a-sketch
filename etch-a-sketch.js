@@ -8,4 +8,14 @@ for (let i=0; i<(16*16); i++) {
     container.appendChild(div.cloneNode());
 }
 
-let divs = document.getElementsByClassName('cell');
+const divs = document.querySelectorAll("div.cell");
+
+
+divs.forEach((div) => {
+    div.addEventListener('mouseover',() => {
+div.classList.add('toggled')
+
+    })
+
+});
+
