@@ -6,11 +6,13 @@ div.classList = 'cell';
 let clear = document.getElementById('clear');
 let changeDimension = document.getElementById('changeDimension');
 let divs = document.querySelectorAll("div.cell");
-let erase = document.querySelectorAll('.cell');
+let erase = document.getElementsByClassName('cell');
 
 function generateGrid () {
     let size = prompt ("Choose the dimension of the grid: up to 100 squares per side.");
-    
+    for (let i= erase.length-1; i>=0; --i) {
+        erase[i].remove();
+    }
 
     for (let i=0; i<(size*size); i++) {
         container.appendChild(div.cloneNode());
@@ -33,6 +35,7 @@ function reset () {
     divs.forEach((div) => {
     div.classList.remove('toggled')
         });
+
     };
 
 
