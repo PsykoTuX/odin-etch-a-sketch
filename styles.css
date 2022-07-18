@@ -2,12 +2,13 @@ body {
     display: flex; 
     align-items: center;   
     flex-direction: column;
+    margin: 0;
     }
     
     #container {
         display: grid;
         justify-content: center;
-        margin: 1rem;
+        margin: 0rem;
         height: 900px;
         width: 900px;
     
